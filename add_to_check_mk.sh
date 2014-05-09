@@ -92,6 +92,7 @@ fi
 ## Check file existence
 if [ ! -f "$mk_file" ]; then
 	echo "WARN: File $mk_file does not currently exist, it will be created."
+	touch $mk_file && chown ${site}:${site} $mk_file
 fi
 wato_file="$(dirname $mk_file)/.wato"
 
