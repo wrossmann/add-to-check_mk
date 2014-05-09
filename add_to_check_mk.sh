@@ -2,7 +2,7 @@
 
 ## Original Script: https://gist.github.com/anonymous/7008399
 ## Original Author: Chris Bennett chris at ceegeebee.com
-## Heavily Modified by: 
+## Heavily Modified by: https://github.com/Sammitch
 
 ## eg: add_to_check_mk.sh -s prod -h host.domain.tld -f myfolder -t 'tag1|tag2|tag3'
 
