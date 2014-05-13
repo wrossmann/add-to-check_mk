@@ -71,10 +71,12 @@ done
 ## Check arg presence
 if [ -z "$site" ]; then
 	echo "ERR: no site name specified" 1>&2
+	usage
 	exit 1
 fi
 if [ -z "$hostname" ]; then
 	echo "ERR: no hostname specified" 1>&2
+	usage
 	exit 1
 fi
 if [ -z "$hosttags" ]; then
