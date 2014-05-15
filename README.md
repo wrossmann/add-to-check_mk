@@ -1,5 +1,4 @@
-add-to-check_mk
-===============
+# add-to-check_mk
 
     Usage: ./add_to_check_mk.sh -s SITENAME -h HOSTNAME [-f FOLDERNAME] [-t 'tag1|tag2|tag3']
     
@@ -9,3 +8,7 @@ add-to-check_mk
               host is to be added to.
         -t    Optional. WATO tags to add to the host.
         -?    This message.
+
+## notes
+
+- If you're copying tags from the wato web interface be warned: after every `|` character check\_mk is inserting a unicode zero-width-space, aka `\u200b`. If these are not removed before you paste the tags into your script/command line check\_mk will interpret them as part of the tag and will then fail to properly apply rules/folders/hostgroups/etc.
