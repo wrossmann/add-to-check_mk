@@ -9,6 +9,13 @@
         -t    Optional. WATO tags to add to the host.
         -?    This message.
 
+## Disclaimer
+
+This script pre-dates the Wato API, which is a far better way to add and manage hosts. You should use _that_ instead both for convenience and _safety_, as this script does not take into account any changes that may have been made since check_mk 1.2.6.
+
+General Docs: https://mathias-kettner.com/cms_web_api.html  
+Command Reference: https://mathias-kettner.com/cms_web_api_references.html
+
 ## notes
 
 - This script assumes check_mk has been installed as part of OMD. If you've manually installed you'll likely want to change some of the paths and remove the `-s` requirement.
